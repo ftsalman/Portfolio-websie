@@ -254,7 +254,7 @@ export function PortfolioPage() {
           {/* Bottom Fade */}
           <div className="absolute inset-x-0 bottom-0 h-[35%] bg-gradient-to-t from-black/90 to-transparent" />
 
-          <div className="relative z-10 flex h-full flex-col p-6 md:p-12">
+          <div className="relative z-10 flex h-full flex-col p-6 space-y-2 md:p-12">
             {/* Text */}
             <div className="mt-24 max-w-xl space-y-2">
               <p className="js-reveal-line text-sm tracking-[0.2em] text-white/80">
@@ -289,6 +289,35 @@ export function PortfolioPage() {
               >
                 Get in Touch
               </MagneticButton>
+            </div>
+
+            {/* Social Media */}
+            <div className="flex items-center gap-4 mt-4">
+              <a
+                href="https://github.com/ftsalman"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex h-11 w-11 items-center justify-center rounded-2xl border border-white/20 bg-white/5 text-white transition-all hover:border-[#FF5F1F] hover:text-[#FF5F1F]"
+              >
+                <SocialIcon icon="github" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/salmaan-faris-16381a33a"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/20 bg-white/5 text-white transition-all hover:border-[#FF5F1F] hover:text-[#FF5F1F]"
+              >
+                <SocialIcon icon="linkedin" />
+              </a>
+              <a
+                href="https://www.instagram.com/1tinx_s"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex h-11 w-11 items-center justify-center rounded-2xl border border-white/20 bg-white/5 text-white transition-all hover:border-[#FF5F1F] hover:text-[#FF5F1F]"
+              >
+                <SocialIcon icon="instagram" />
+              </a>
             </div>
           </div>
         </section>
@@ -410,7 +439,6 @@ export function PortfolioPage() {
           <div className="mt-8 flex justify-center">
             <MagneticButton
               href="https://mail.google.com/mail/?view=cm&fs=1&to=ftsalmanfarisotp@gmail.com&su=Project%20Inquiry&body=Hi%20Salman%2C%20I%20want%20to%20discuss%20a%20project."
-           
               className="border-[#FF5F1F]/80 bg-[#FF5F1F]/14 text-[#FF5F1F]"
             >
               ftsalmanfarisotp@gmail.com
