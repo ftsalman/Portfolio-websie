@@ -209,6 +209,41 @@ export function PortfolioPage() {
       });
     }, pageRef);
 
+    gsap.from(".contact-title", {
+      scrollTrigger: {
+        trigger: ".contact-section",
+        start: "top 80%",
+      },
+      y: 60,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+
+    gsap.from(".contact-form > *", {
+      scrollTrigger: {
+        trigger: ".contact-section",
+        start: "top 75%",
+      },
+      y: 40,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.15,
+      ease: "power3.out",
+    });
+
+    gsap.from(".contact-buttons > *", {
+      scrollTrigger: {
+        trigger: ".contact-section",
+        start: "top 70%",
+      },
+      x: 60,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power3.out",
+    });
+
     const refreshTimeout = window.setTimeout(
       () => ScrollTrigger.refresh(),
       250,
@@ -439,9 +474,10 @@ export function PortfolioPage() {
           <div className="mt-8 flex justify-center">
             <MagneticButton
               href="https://mail.google.com/mail/?view=cm&fs=1&to=ftsalmanfarisotp@gmail.com&su=Project%20Inquiry&body=Hi%20Salman%2C%20I%20want%20to%20discuss%20a%20project."
-              className="border-[#FF5F1F]/80 bg-[#FF5F1F]/14 text-[#FF5F1F]"
+              className=" flex gap-2 border-[#FF5F1F]/80 bg-[#FF5F1F]/14 text-[#FF5F1F]"
             >
-              ftsalmanfarisotp@gmail.com
+              <img className=" w-6 h-6 " src="/projects/logo.png" alt="" />
+              Contact Me
             </MagneticButton>
           </div>
         </section>

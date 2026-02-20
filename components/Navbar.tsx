@@ -14,8 +14,14 @@ export function Navbar() {
       <nav className="mx-auto flex w-full max-w-[1400px] items-center justify-between rounded-3xl border border-white/10 bg-black/60 px-4 py-3 backdrop-blur-xl md:px-6">
         <a
           href="#home"
-          className="text-sm font-semibold uppercase tracking-[0.3em] text-white/90"
+          className=" flex items-center  text-sm font-semibold uppercase tracking-[0.3em] text-white/90"
         >
+          <img 
+           src="/projects/logo.png"
+           alt="logo"
+           className=" w-9 h-9" 
+           
+           />
           SALMAN FARIS
         </a>
         <div className="hidden items-center gap-6 md:flex">
