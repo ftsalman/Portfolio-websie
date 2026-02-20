@@ -48,7 +48,9 @@ export function Footer() {
           <p className="text-xs uppercase tracking-[0.22em] text-white/70">
             Contact
           </p>
-          <p className="mt-4 text-sm text-white/75">Palakkad, Kerala, India</p>
+          <p className="mt-4 text-sm text-white/75">
+           Mythri Nagar Kalapaka, Pattambi, Kerala 679306
+          </p>
           <div className="mt-5">
             <MagneticButton
               href="https://mail.google.com/mail/?view=cm&fs=1&to=ftsalmanfarisotp@gmail.com&su=Project%20Inquiry&body=Hi%20Salman%2C%20I%20want%20to%20discuss%20a%20project."
